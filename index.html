@@ -151,58 +151,63 @@
                 <div class="projects-content">
                     <div class="project-content-header">
                         <h3>PORTFOLIO</h3>
-                        <h2>Look at mine recent projects<span><img src="./images/light-bulb.png"></span> </h2>
+                        <h2>Look at mine recent projects<span class="img-span"><img
+                                    src="./images/hello-world.png"></span> </h2>
                     </div>
-                    <div class="projects-div">
-                        <div class="project-img-wrapper">
-                            <img src="./images/projects/CodeAndDesign.png" alt="snimka na vseki proekt">
-                        </div>
-                        <div class="project-description">
-                            <h1>Web Design Studio</h1>
-                            <p>Here i have used html&css, some js for the dinamic and media queries for
-                                responsive design.</p>
-                            <div class="tech-skills">
-                                <p>HTML&CSS</p>
-                                <p>Javascript</p>
+                    <div class="all-projects">
+                        <div class="projects-div">
+                            <div class="project-img-wrapper">
+                                <img src="./images/projects/CodeAndDesign.png" alt="snimka na vseki proekt">
+                            </div>
+                            <div class="project-description">
+                                <h1>Web Design Studio</h1>
+                                <p>Here i have used html&css, some js for the dinamic and media queries for
+                                    responsive design.</p>
+                                <div class="tech-skills">
+                                    <p>HTML&CSS</p>
+                                    <p>Javascript</p>
 
-                            </div>
-                            <div class="code-demo">
-                                <a href="https://github.com/KaloyanGK/CodeAndDesign" target="_blank">Code<img
-                                        src="./images/platforms/github1.png" alt=""></a>
-                                <a href="https://kaloyangk.github.io/CodeAndDesign/" target="_blank">Live Demo<img
-                                        src="./images/platforms/coding1.png" alt=""></a>
+                                </div>
+                                <div class="code-demo">
+                                    <a href="https://github.com/KaloyanGK/CodeAndDesign" target="_blank">Code<img
+                                            src="./images/platforms/github1.png" alt=""></a>
+                                    <a href="https://kaloyangk.github.io/CodeAndDesign/" target="_blank">Live Demo<img
+                                            src="./images/platforms/coding1.png" alt=""></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="projects-div-reverse">
-                        <div class="project-img-wrapper">
-                            <img src="./images/projects/CodeAndDesign.png" alt="snimka na vseki proekt">
-                        </div>
-                        <div class="project-description">
-                            <h1>Web Design Studio</h1>
-                            <p>Here i have used html&css, some js for the dinamic and media queries for
-                                responsive design.</p>
-                            <div class="tech-skills">
-                                <p>HTML&CSS</p>
-                                <p>Javascript</p>
+                        <div class="projects-div-reverse">
+                            <div class="project-img-wrapper">
+                                <img src="./images/projects/CodeAndDesign.png" alt="snimka na vseki proekt">
+                            </div>
+                            <div class="project-description">
+                                <h1>Web Design Studio</h1>
+                                <p>Here i have used html&css, some js for the dinamic and media queries for
+                                    responsive design.</p>
+                                <div class="tech-skills">
+                                    <p>HTML&CSS</p>
+                                    <p>Javascript</p>
 
-                            </div>
-                            <div class="code-demo">
-                                <a href="">Code<img src="./images/platforms/github1.png" alt=""></a>
-                                <a href="#/">Live Demo<img src="./images/platforms/coding1.png" alt=""></a>
+                                </div>
+                                <div class="code-demo">
+                                    <a href="">Code<img src="./images/platforms/github1.png" alt=""></a>
+                                    <a href="#/">Live Demo<img src="./images/platforms/coding1.png" alt=""></a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
             </div>
         </section>
         <section id="contact" class="contact">
             <div class="container">
-                <div class="contact-content">
+                <dfiv class="contact-content">
                     <div class="contact-content-header">
-                        <h3>Contact</h3>
-                        <h2>Do not hesitate to contact me!</h2>
+                        <h3>Contacts</h3>
+                        <h2>I remain at your disposal and will be more than happy to discuss anything you might need !
+                        </h2>
                     </div>
                     <div class="contact-content-contacts">
                         <div class="contact-content-contact phone">
@@ -225,12 +230,19 @@
                         </div>
                     </div>
 
-                </div>
+                </dfiv>
             </div>
         </section>
+        <footer>
+            <div class="container">
+                <h3>I would highly appreciate your feedback &hearts;</h3>
+
+            </div>
+        </footer>
     </main>
     <a href="#top" id="arrow-up" title="Go to top"> <img src="./images/go-up.png" alt=""></a>
     <script>
+        console.log(document.documentElement.scrollHeight)
         rotateText();
     </script>
     <script src="./app.js"></script>
@@ -240,13 +252,13 @@
 
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function () { scrollFunction() };
-
         function scrollFunction() {
             if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
                 mybutton.style.display = "block";
             } else {
                 mybutton.style.display = "none";
             }
+
         }
     </script>
 </body>
